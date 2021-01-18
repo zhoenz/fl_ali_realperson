@@ -2,8 +2,11 @@
 #import <RPSDK/RPSDK.h>
 
 @implementation FlAliRealpersonPlugin
+
+FlutterMethodChannel* channel;
+
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
-  FlutterMethodChannel* channel = [FlutterMethodChannel
+  channel = [FlutterMethodChannel
       methodChannelWithName:@"fl_ali_realperson"
             binaryMessenger:[registrar messenger]];
   FlAliRealpersonPlugin* instance = [[FlAliRealpersonPlugin alloc] init];
@@ -14,7 +17,7 @@
 - (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {
   if ([@"startRealPerson" isEqualToString:call.method]) {
     UIViewController * currentController = [self currentViewController];
-    [RPSDK startWithVerifyToken:call.argument[@"token"]
+    [RPSDK startWithVerifyToken:call.arguments[@"token"]
                  viewController: currentController
                      completion:^(RPResult * _Nonnull result) {
         // 建议接入方调用实人认证服务端接口DescribeVerifyResult，
