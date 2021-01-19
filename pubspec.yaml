@@ -1,8 +1,7 @@
 name: fl_ali_realperson
 description: A new flutter plugin project.
 version: 0.0.2
-author:
-homepage:
+homepage: https://github.com/zhoenz/fl_ali_realperson
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
