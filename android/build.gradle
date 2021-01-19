@@ -49,4 +49,6 @@ dependencies {
     api (name:'SecurityGuardSDK-external-release-5.5.14240408', ext:'aar')
     api (name:'MiddleTierSDK-external-release-5.5.13874142', ext:'aar')
     api (name:'windvane', ext:'aar')
+    compileOnly 'com.squareup.okhttp3:okhttp:3.12.0'
+    compileOnly 'com.squareup.okio:okio:1.16.0'
 }
