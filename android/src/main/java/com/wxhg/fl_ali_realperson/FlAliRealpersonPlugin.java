@@ -34,7 +34,7 @@ public class FlAliRealpersonPlugin implements FlutterPlugin, MethodCallHandler {
         channel = new MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "fl_ali_realperson");
         channel.setMethodCallHandler(this);
         this.context = flutterPluginBinding.getApplicationContext();
-        RPVerify.init(context);
+//        RPVerify.init(context);
     }
 
     // This static function is optional and equivalent to onAttachedToEngine. It supports the old
@@ -73,6 +73,9 @@ public class FlAliRealpersonPlugin implements FlutterPlugin, MethodCallHandler {
                     }
                 }
             });
+        }else if(call.method.equals("init")){
+            RPVerify.init(context);
+            channel.invokeMethod("onRealPersonResult", "SUCCESS");
         } else {
             result.notImplemented();
         }

@@ -24,4 +24,13 @@ class FlAliRealperson {
     };
     await _channel.invokeMethod('startRealPerson', map);
   }
+
+  static Future<Null> init(callBack) async {
+    _channel.setMethodCallHandler(_handler);
+    _callBack = callBack;
+
+    Map<String, dynamic> map = {
+    };
+    await _channel.invokeMethod('init', map);
+  }
 }

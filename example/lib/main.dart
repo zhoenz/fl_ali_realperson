@@ -24,9 +24,11 @@ class _MyAppState extends State<MyApp> {
   void initPlatformState() async {
     String platformVersion = "1";
     try {
-      await FlAliRealperson.startRealPerson("f96657d2205b4374a208312dad70f3f7",
-          (result) {
-        print("the realPerson result is :" + result);
+      FlAliRealperson.init(() {
+        FlAliRealperson.startRealPerson("f96657d2205b4374a208312dad70f3f7",
+            (result) {
+          print("the realPerson result is :" + result);
+        });
       });
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
