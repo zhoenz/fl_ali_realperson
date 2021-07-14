@@ -30,6 +30,7 @@ android {
             dirs 'libs'
         }
     }
+
     compileSdkVersion 28
 
     lintOptions {
@@ -46,19 +47,23 @@ android {
         ndk {
             abiFilters "armeabi-v7a", "arm64-v8a"
         }
+        signingConfig signingConfigs.debug
     }
 
     signingConfigs {
         debug {
+            storeFile file('E:\\projects\\brandpay_mer_app\\android\\app\\wxhg.jks')
+            storePassword '123456'
             keyAlias 'wxhg'
             keyPassword '123456'
-            storeFile file('wxhg.jks')
-            storePassword '123456'
-            v2SigningEnabled false
-            v1SigningEnabled true
         }
 
-
+        release {
+            storeFile file('E:\\projects\\brandpay_mer_app\\android\\app\\wxhg.jks')
+            storePassword '123456'
+            keyAlias 'wxhg'
+            keyPassword '123456'
+        }
     }
     buildTypes {
         release {
@@ -70,6 +75,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
+            minifyEnabled false
+            shrinkResources false
             signingConfig signingConfigs.debug
         }
     }
@@ -80,3 +87,14 @@ flutter {
 }
 
 
+dependencies {
+//    implementation fileTree(include: ['*.aar'], dir: 'libs')
+//    implementation files('libs/MiddleTierSDK-external-release-5.5.13874142.aar')
+//    implementation files('libs/oss-android-sdk-2.9.2.aar')
+//    implementation files('libs/rpsdk-4.10.0-open.aar')
+//    implementation files('libs/SecurityBodySDK-external-release-5.5.28-preInstall.aar')
+//    implementation files('libs/SecurityGuardSDK-external-release-5.5.28-preInstall.aar')
+//    implementation files('libs/windvane.aar')
+    implementation 'com.squareup.okhttp3:okhttp:3.12.0'
+    implementation 'com.squareup.okio:okio:1.16.0'
+}
