@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: :SecurityGuardSDK-external-release-5.5.14240408:@aar" type="AndroidModuleLibraryType">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ddf1b37ef229b241c46722354542971a/SecurityGuardSDK-external-release-5.5.14240408/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ddf1b37ef229b241c46722354542971a/SecurityGuardSDK-external-release-5.5.14240408/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

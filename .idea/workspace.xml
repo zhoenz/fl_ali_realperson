@@ -2,26 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64a7c444-1924-4c8e-9242-b36a9aefb506" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/java/com/wxhg/fl_ali_realperson/FlAliRealpersonPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/wxhg/fl_ali_realperson/FlAliRealpersonPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fl_ali_realperson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fl_ali_realperson.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fl_ali_realperson.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fl_ali_realperson.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[cefb8f69]" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1vFOiH1jgQHPkAORoFu7IwodXfK" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -33,8 +31,14 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/android" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/example/android/build.gradle" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects\flutter_plugins\fl_ali_realperson\android\src\main\jniLibs" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -47,16 +51,86 @@
       <option name="presentableId" value="Default" />
       <updated>1626154495188</updated>
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1626243117369</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1626243117371</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1626155178028">
+    <state x="473" y="75" width="1412" height="869" key="CommitChangelistDialog2" timestamp="1626243114981">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1019@0.0.1920.1019" timestamp="1626155178028" />
-    <state x="662" y="241" width="596" height="536" key="find.popup" timestamp="1626155460108">
+    <state x="473" y="75" width="1412" height="869" key="CommitChangelistDialog2/0.0.1920.1019@0.0.1920.1019" timestamp="1626243114981" />
+    <state x="740" y="264" key="FileChooserDialogImpl" timestamp="1626243154627">
       <screen x="0" y="0" width="1920" height="1019" />
     </state>
-    <state x="662" y="241" width="596" height="536" key="find.popup/0.0.1920.1019@0.0.1920.1019" timestamp="1626155460108" />
+    <state x="740" y="264" key="FileChooserDialogImpl/0.0.1920.1019@0.0.1920.1019" timestamp="1626243154627" />
+    <state width="1860" height="284" key="GridCell.Tab.0.bottom" timestamp="1626243155369">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1860" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1019@0.0.1920.1019" timestamp="1626243155369" />
+    <state width="1860" height="284" key="GridCell.Tab.0.center" timestamp="1626243155369">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1860" height="284" key="GridCell.Tab.0.center/0.0.1920.1019@0.0.1920.1019" timestamp="1626243155369" />
+    <state width="1860" height="284" key="GridCell.Tab.0.left" timestamp="1626243155369">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1860" height="284" key="GridCell.Tab.0.left/0.0.1920.1019@0.0.1920.1019" timestamp="1626243155369" />
+    <state width="1860" height="284" key="GridCell.Tab.0.right" timestamp="1626243155369">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1860" height="284" key="GridCell.Tab.0.right/0.0.1920.1019@0.0.1920.1019" timestamp="1626243155369" />
+    <state width="1860" height="284" key="GridCell.Tab.1.bottom" timestamp="1626243155369">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1860" height="284" key="GridCell.Tab.1.bottom/0.0.1920.1019@0.0.1920.1019" timestamp="1626243155369" />
+    <state width="1860" height="284" key="GridCell.Tab.1.center" timestamp="1626243155369">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1860" height="284" key="GridCell.Tab.1.center/0.0.1920.1019@0.0.1920.1019" timestamp="1626243155369" />
+    <state width="1860" height="284" key="GridCell.Tab.1.left" timestamp="1626243155369">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1860" height="284" key="GridCell.Tab.1.left/0.0.1920.1019@0.0.1920.1019" timestamp="1626243155369" />
+    <state width="1860" height="284" key="GridCell.Tab.1.right" timestamp="1626243155369">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1860" height="284" key="GridCell.Tab.1.right/0.0.1920.1019@0.0.1920.1019" timestamp="1626243155369" />
+    <state x="590" y="210" key="RollbackChangesDialog" timestamp="1626243037826">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="590" y="210" key="RollbackChangesDialog/0.0.1920.1019@0.0.1920.1019" timestamp="1626243037826" />
+    <state x="681" y="254" width="540" height="524" key="StructurePopup" timestamp="1626225682044">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="681" y="254" width="540" height="524" key="StructurePopup/0.0.1920.1019@0.0.1920.1019" timestamp="1626225682044" />
+    <state x="753" y="422" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626242724766">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="753" y="422" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1019@0.0.1920.1019" timestamp="1626242724766" />
+    <state x="662" y="241" width="596" height="536" key="find.popup" timestamp="1626156634503">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="662" y="241" width="596" height="536" key="find.popup/0.0.1920.1019@0.0.1920.1019" timestamp="1626156634503" />
   </component>
 </project>

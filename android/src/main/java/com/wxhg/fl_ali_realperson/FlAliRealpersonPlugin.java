@@ -12,6 +12,7 @@ import com.alibaba.security.realidentity.RPVerify;
 import com.alibaba.security.rp.RPSDK;
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
+import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
@@ -28,14 +29,35 @@ public class FlAliRealpersonPlugin implements FlutterPlugin, MethodCallHandler {
     /// when the Flutter Engine is detached from the Activity
     private MethodChannel channel;
     private Context context;
+    @Override
+    public void onAttachedToEngine(@NonNull FlutterPlugin.FlutterPluginBinding binding) {
+        this.context = binding.getApplicationContext();
+        onAttachedToEngine(binding.getApplicationContext(), binding.getBinaryMessenger());
+    }
+
+    private void onAttachedToEngine(Context applicationContext, BinaryMessenger messenger) {
+        this.context = applicationContext;
+        channel = new MethodChannel(messenger, "fl_ali_realperson");
+        channel.setMethodCallHandler(this);
+    }
+
 
     @Override
-    public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
-        channel = new MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "fl_ali_realperson");
-        channel.setMethodCallHandler(this);
-        this.context = flutterPluginBinding.getApplicationContext();
-//        RPVerify.init(context);
+    public void onDetachedFromEngine(@NonNull FlutterPlugin.FlutterPluginBinding binding) {
+        context = binding.getApplicationContext();
+        channel.setMethodCallHandler(null);
+        channel = null;
     }
+
+
+
+//    @Override
+//    public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
+//        channel = new MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "fl_ali_realperson");
+//        channel.setMethodCallHandler(this);
+//        this.context = flutterPluginBinding.getApplicationContext();
+////        RPVerify.init(context);
+//    }
 
     // This static function is optional and equivalent to onAttachedToEngine. It supports the old
     // pre-Flutter-1.12 Android projects. You are encouraged to continue supporting
@@ -47,8 +69,17 @@ public class FlAliRealpersonPlugin implements FlutterPlugin, MethodCallHandler {
     // depending on the user's project. onAttachedToEngine or registerWith must both be defined
     // in the same class.
     public static void registerWith(Registrar registrar) {
-        final MethodChannel channel = new MethodChannel(registrar.messenger(), "fl_ali_realperson");
-        channel.setMethodCallHandler(new FlAliRealpersonPlugin());
+//        final MethodChannel channel = new MethodChannel(registrar.messenger(), "fl_ali_realperson");
+//        channel.setMethodCallHandler(new FlAliRealpersonPlugin());
+
+        final FlAliRealpersonPlugin instance = new FlAliRealpersonPlugin();
+        instance.onAttachedToEngine(registrar.context(), registrar.messenger());
+
+
+//        final FlAliRealpersonPlugin instance = new FlAliRealpersonPlugin(registrar.activity());
+//        registrar.addActivityResultListener(instance);
+//        instance.onAttachedToEngine(registrar.context(), registrar.messenger());
+
     }
 
     @Override
@@ -79,10 +110,5 @@ public class FlAliRealpersonPlugin implements FlutterPlugin, MethodCallHandler {
         } else {
             result.notImplemented();
         }
-    }
-
-    @Override
-    public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {
-        channel.setMethodCallHandler(null);
     }
 }

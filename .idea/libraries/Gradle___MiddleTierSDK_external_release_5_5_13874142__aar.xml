@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: :MiddleTierSDK-external-release-5.5.13874142:@aar" type="AndroidModuleLibraryType">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c7b19766a26b936ce7ffc859acdca812/MiddleTierSDK-external-release-5.5.13874142/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c7b19766a26b936ce7ffc859acdca812/MiddleTierSDK-external-release-5.5.13874142/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
