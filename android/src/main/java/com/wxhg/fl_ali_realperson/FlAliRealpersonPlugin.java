@@ -31,7 +31,6 @@ public class FlAliRealpersonPlugin implements FlutterPlugin, MethodCallHandler {
     private Context context;
     @Override
     public void onAttachedToEngine(@NonNull FlutterPlugin.FlutterPluginBinding binding) {
-        this.context = binding.getApplicationContext();
         onAttachedToEngine(binding.getApplicationContext(), binding.getBinaryMessenger());
     }
 

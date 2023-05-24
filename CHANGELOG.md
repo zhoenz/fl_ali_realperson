@@ -1,3 +1,5 @@
+## 0.0.5
+support null safety
 ## 0.0.4
 android platform upgrade to v2
 ## 0.0.3
