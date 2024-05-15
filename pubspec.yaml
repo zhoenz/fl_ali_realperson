@@ -1,6 +1,6 @@
 name: fl_ali_realperson
 description: A plugin for use aliyun real face detect in flutter.
-version: 0.0.5
+version: 0.0.6
 homepage: https://github.com/zhoenz/fl_ali_realperson
 
 environment:

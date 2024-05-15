@@ -1,3 +1,5 @@
+## 0.0.6
+change to newest aliyun sdk version
 ## 0.0.5
 support null safety
 ## 0.0.4
