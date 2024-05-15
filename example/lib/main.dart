@@ -23,8 +23,7 @@ class _MyAppState extends State<MyApp> {
   void initPlatformState() async {
     String platformVersion = "1";
     try {
-      FlAliRealperson.startRealPerson("f96657d2205b4374a208312dad70f3f7",
-          (result) {
+      FlAliRealperson.startRealPerson("后端返回的调起认证的token值", (result) {
         print("the realPerson result is :" + result);
       });
     } on PlatformException {
