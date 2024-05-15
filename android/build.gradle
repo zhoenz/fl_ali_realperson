@@ -42,12 +42,10 @@ android {
 
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
-//    implementation (name:'rpsdk-4.10.0-open.aar', ext:'aar')
-//    implementation (name:'oss-android-sdk-2.9.2', ext:'aar')
-//    implementation (name:'SecurityBodySDK-external-release-5.5.28-preInstall.aar', ext:'aar')
-//    implementation (name:'SecurityGuardSDK-external-release-5.5.28-preInstall.aar', ext:'aar')
-//    implementation (name:'MiddleTierSDK-external-release-5.5.13874142.aar', ext:'aar')
-//    implementation (name:'windvane', ext:'aar')
+    api (name:'rpsdk-4.18.6-open', ext:'aar')
+    api (name:'SecurityBodySDK-5.6.231002-preInstall', ext:'aar')
+    api (name:'SecurityGuardSDK-5.6.231002-preInstall', ext:'aar')
+    api (name:'MiddleTierSDK-5.6.231002-preInstall', ext:'aar')
     compileOnly 'com.squareup.okhttp3:okhttp:3.12.0'
     compileOnly 'com.squareup.okio:okio:1.16.0'
 }
